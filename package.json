@@ -7,7 +7,8 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "prestorybook": "rnstl",
-    "storybook": "start-storybook -p 7007"
+    "storybook": "start-storybook -p 7007",
+    "test": "jest"
   },
   "dependencies": {
     "@react-native-community/masked-view": "0.1.6",
@@ -32,12 +33,20 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/react-native": "^5.3.18",
     "@storybook/react-native-server": "^5.3.18",
+    "@types/jest": "^25.2.1",
     "@types/react": "~16.9.23",
     "@types/react-native": "~0.61.17",
+    "@types/react-test-renderer": "^16.9.2",
     "@types/styled-components": "^5.1.0",
     "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-root-import": "^6.5.0",
     "babel-preset-expo": "~8.1.0",
+    "jest-expo": "^37.0.0",
+    "jest-fetch-mock": "^3.0.3",
     "react-native-storybook-loader": "^1.8.1",
+    "react-native-testing-library": "^1.13.2",
+    "react-test-renderer": "^16.13.1",
     "typescript": "~3.8.3"
   },
   "private": true,
@@ -49,5 +58,12 @@
       "pattern": "**/*.stories.js",
       "outputFile": "./storybook/storyLoader.js"
     }
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
+    ],
+    "automock": false
   }
 }

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { StyleSheet, TextInputProps, Animated } from 'react-native';
+import { TextInputProps, Animated } from 'react-native';
 
 import { Container } from './styles';
 
