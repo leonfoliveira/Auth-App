@@ -15,6 +15,7 @@ Expo <br />
 Styled Components <br />
 React Navigation <br />
 React Context <br />
+AsyncStorage <br />
 Storybook
 </p>
 
