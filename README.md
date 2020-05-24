@@ -5,7 +5,10 @@
   SignIn, SignUp and Main screens with context storage.
 </p>
 
-
+<h2 align="center">:books: What I learned</h2>
+<p align="center">
+  How to work with multiple and private screens with React Navigation and how to deal with authentication data using React Context.
+</p>
 
 <h2 align="center">🚀 Technologies</h2>
 
